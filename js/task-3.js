@@ -1,27 +1,21 @@
 'use strict';
 
-// ===============================================
+const textInput = document.querySelector('#name-input');
+const textOutput = document.querySelector('#name-output');
 
-console.log(' ');
-console.log('===== Task 3 ======');
-console.log(' ');
+textInput.addEventListener("input", (event) => {
+    const trimmedValue = event.currentTarget.value.trim();
+    textOutput.textContent = trimmedValue === '' ? 'Anonymous' : trimmedValue;
+})
 
-// ===============================================
+// Styles
 
-function filterArray(numbers, value) {
-    let newArray = [];
-
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] > value) {
-            newArray.push(numbers[i]);
-        }
-    }
-
-    return newArray;
-}
-
-console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
-console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
-console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
-console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
-console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+textInput.style.outline = "none";
+textInput.style.paddingTop = '8px';
+textInput.style.paddingBottom = '8px';
+textInput.style.paddingLeft = '16px';
+textInput.style.paddingRight = '16px';
+textInput.style.border = '1px solid #808080';
+textInput.style.borderRadius = '4px';
+textInput.style.fontSize = '14px';
+textInput.style.color = '#2e2f42';

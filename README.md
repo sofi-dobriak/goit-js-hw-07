@@ -1,1 +1,1 @@
-The third homework of the JavaScript module of the FullStack Developer course
+The seventh homework of the JavaScript module of the FullStack Developer course
