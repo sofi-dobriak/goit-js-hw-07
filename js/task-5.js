@@ -12,10 +12,9 @@ const changeColorButton = document.querySelector('.change-color');
 changeColorButton.addEventListener('click', handleFunction);
 
 function handleFunction() {
-  const randomColor = getRandomHexColor();
-
-  document.body.style.backgroundColor = randomColor;
-  textColor.textContent = randomColor;
+    // document.body.style?.backgroundColor = getRandomHexColor();
+    widget.style.backgroundColor = getRandomHexColor();
+    textColor.textContent = getRandomHexColor();
 }
 
 // Styles
@@ -38,3 +37,12 @@ changeColorButton.style.height = '40px';
 changeColorButton.style.border = 'none';
 changeColorButton.style.margin = '0 auto';
 changeColorButton.style.borderRadius = '8px';
+changeColorButton.style.cursor = 'pointer';
+
+
+changeColorButton.addEventListener('mouseenter', () => {
+    changeColorButton.style.backgroundColor = '#6c8cff';
+});
+changeColorButton.addEventListener('mouseleave', () => {
+    changeColorButton.style.backgroundColor = '#4e75ff';
+});

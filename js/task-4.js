@@ -49,6 +49,13 @@ inputs.forEach(input => {
     input.style.border = '1px solid #808080';
     input.style.borderRadius = '4px';
     input.style.paddingLeft = '16px';
+
+    input.addEventListener('mouseenter', () => {
+        input.style.borderColor = '#000';
+    });
+    input.addEventListener('mouseleave', () => {
+        input.style.borderColor = '#808080';
+    });
 });
 
 formButton.style.color = '#fff';
@@ -59,6 +66,12 @@ formButton.style.width = '86px';
 formButton.style.height = '40px';
 formButton.style.cursor = 'pointer';
 
+formButton.addEventListener('mouseenter', () => {
+    formButton.style.backgroundColor = '#6c8cff';
+});
+formButton.addEventListener('mouseleave', () => {
+    formButton.style.backgroundColor = '#4e75ff';
+});
 
 
 

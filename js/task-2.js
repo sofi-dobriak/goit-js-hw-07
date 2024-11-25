@@ -53,7 +53,7 @@ images.forEach(image => {
 
 imagesList.style.display = "flex";
 imagesList.style.flexWrap = 'wrap';
-imagesList.style.justifyContent = 'space-between';
 imagesList.style.listStyleType = "none";
+imagesList.style.width = "1048px";
 
 
