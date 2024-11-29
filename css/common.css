@@ -4,11 +4,163 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Navigation ====== */
+
+p {
+  margin-bottom: 24px;
+}
+
+/* ====== Task 1 ====== */
+
+#categories {
+  max-width: 440px;
+}
+
+.item {
+  background-color: #f6f6fe;
+  padding: 16px;
+  max-width: 392px;
+  margin-bottom: 24px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+#categories .item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+#categories .item ul>li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+#categories .item ul>li:hover,
+#categories .item ul>li:focus {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Task 3 ====== */
+
+input {
+  font-family: "Montserrat", sans-serif;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  min-width: 360px;
+  margin-bottom: 16px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+input:hover,
+input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+input:active {
+  border-color: #808080;
+}
+
+/* ====== Task 4 ====== */
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label>input {
+  max-width: 360px;
+}
+
+button {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 86px;
+  height: 40px;
+
+  background-color: #4e75ff;
+
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #6c8cff;
+}
+
+/* ====== Task 5 ====== */
+
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+
+  border: 1px solid #4e75ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ====== Task 6 ====== */
+
+#controls>button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls>button[data-destroy]:hover,
+#controls>button[data-destroy]:focus {
+  background-color: #ff7070;
 }
