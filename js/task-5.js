@@ -1,15 +1,15 @@
 'use strict';
 
 const widget = document.querySelector('.widget');
-const text = document.querySelector('.color');
-const button = document.querySelector('.change-color');
+const textColor = document.querySelector('.color');
+const buttonColor = document.querySelector('.change-color');
 
-button.addEventListener('click', handleClick);
+buttonColor.addEventListener('click', handleSubmit);
 
-function handleClick() {
+function handleSubmit() {
     // document.body.style.backgroundColor = getRandomHexColor();
     widget.style.backgroundColor = getRandomHexColor();
-    text.textContent = getRandomHexColor();
+    textColor.textContent = getRandomHexColor();
 }
 
 function getRandomHexColor() {

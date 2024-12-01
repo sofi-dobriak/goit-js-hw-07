@@ -1,7 +1,7 @@
 'use strict';
 
 const input = document.querySelector('#name-input');
-const defoultText = document.querySelector('#name-output');
+const output = document.querySelector('#name-output');
 
 input.addEventListener('input', handleInput);
 
@@ -12,5 +12,5 @@ function handleInput() {
         value = 'Anonymous';
     }
 
-    defoultText.textContent = value;
+    output.textContent = value;
 }

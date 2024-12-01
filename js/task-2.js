@@ -27,19 +27,23 @@ const images = [
     },
 ];
 
-const imageList = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
 
 images.forEach(item => {
+    const imageItems = document.createElement('li');
+
     const image = document.createElement('img');
     image.setAttribute('src', item.url);
     image.setAttribute('alt', item.alt);
 
-    imageList.appendChild(image);
+    imageItems.append(image);
+    gallery.append(imageItems);
 
     // Styles
-    imageList.style.display = 'flex';
-    imageList.style.flexWrap = 'wrap';
-    imageList.style.gap = '24px';
+    gallery.style.display = 'flex';
+    gallery.style.flexWrap = 'wrap';
+    gallery.style.alignItems = 'center';
+    gallery.style.gap = '24px';
 
     image.style.width = '360px';
     image.style.height = 'auto';

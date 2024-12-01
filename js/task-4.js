@@ -1,6 +1,7 @@
 'use strict';
 
 const registerForm = document.querySelector('.login-form');
+
 registerForm.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
@@ -15,11 +16,11 @@ function handleSubmit(event) {
         return;
     }
 
-    const registerUser = {
+    let loginUser = {
         email: login,
         password: password,
     };
 
-    console.log(registerUser);
+    console.log(loginUser);
     form.reset();
 }

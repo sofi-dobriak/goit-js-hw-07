@@ -5,10 +5,10 @@ const categoriesItem = document.querySelectorAll('.item');
 
 console.log(`Number of categories: ${categoriesItem.length}`);
 
-const numberOfCategories = categoriesItem.forEach(item => {
-    const categoriesTitle = item.querySelector('h2').textContent;
-    const numberOfLists = item.querySelectorAll('li').length;
+const itemDescription = categoriesItem.forEach(item => {
+    const title = item.querySelector('h2').textContent;
+    const subItems = item.querySelectorAll('li').length;
 
-    console.log(`Category: ${categoriesTitle}`);
-    console.log(`Elements: ${numberOfLists}`);
+    console.log(`Categories: ${title}`);
+    console.log(`Elements: ${subItems}`);
 });
