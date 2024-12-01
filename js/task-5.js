@@ -7,9 +7,10 @@ const buttonColor = document.querySelector('.change-color');
 buttonColor.addEventListener('click', handleSubmit);
 
 function handleSubmit() {
-    // document.body.style.backgroundColor = getRandomHexColor();
-    widget.style.backgroundColor = getRandomHexColor();
-    textColor.textContent = getRandomHexColor();
+    let randomColor = getRandomHexColor();
+
+    document.body.style.backgroundColor = randomColor;
+    textColor.textContent = randomColor;
 }
 
 function getRandomHexColor() {

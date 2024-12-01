@@ -12,7 +12,7 @@ function getRandomHexColor() {
         .padStart(6, 0)}`;
 }
 
-function createBox(amount) {
+function createBoxes(amount) {
     let boxSize = 30;
 
     const rowContainer = document.createElement('div');
@@ -20,16 +20,18 @@ function createBox(amount) {
     rowContainer.style.flexDirection = 'row';
     rowContainer.style.gap = '8px';
 
-    for (let i = 0; i < amount; i++) {
-        const box = document.createElement('div');
-        box.style.width = `${boxSize}px`;
-        box.style.height = `${boxSize}px`;
-        box.style.backgroundColor = getRandomHexColor();
+    let boxedMarkup = '';
 
-        rowContainer.append(box);
+    for (let i = 0; i < amount; i++) {
+        boxedMarkup += `<div
+        style="width:${boxSize}px;
+        height:${boxSize}px;
+        background-color: ${getRandomHexColor()};"></div>`;
+
         boxSize += 10;
     }
 
+    rowContainer.innerHTML = boxedMarkup;
     boxesContainer.prepend(rowContainer);
 }
 
@@ -37,7 +39,7 @@ function handleCreate() {
     const amount = Number(input.value);
 
     if (amount >= 1 && amount <= 100) {
-        createBox(amount);
+        createBoxes(amount);
         input.value = '';
     }
 }
