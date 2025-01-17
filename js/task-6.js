@@ -1,5 +1,7 @@
 'use strict';
 
+'use strict';
+
 const controls = document.querySelector('.controls');
 const input = document.querySelector('input');
 const createButton = document.querySelector('[data-create');

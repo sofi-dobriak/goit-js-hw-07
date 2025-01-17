@@ -1,16 +1,17 @@
 'use strict';
 
+/*Напиши скрипт, який змінює колір фону елемента <body> через інлайн-стиль по кліку на button.change-color і задає це значення кольору текстовим вмістом для span.color.*/
+
 const widget = document.querySelector('.widget');
-const textColor = document.querySelector('.color');
-const buttonColor = document.querySelector('.change-color');
+const colorText = document.querySelector('.color');
+const colorButton = document.querySelector('.change-color');
 
-buttonColor.addEventListener('click', handleSubmit);
+colorButton.addEventListener('click', onButtonClick);
 
-function handleSubmit() {
-    let randomColor = getRandomHexColor();
-
-    document.body.style.backgroundColor = randomColor;
-    textColor.textContent = randomColor;
+function onButtonClick() {
+    const newColor = getRandomHexColor();
+    widget.style.backgroundColor = newColor;
+    colorText.textContent = newColor;
 }
 
 function getRandomHexColor() {
@@ -18,3 +19,10 @@ function getRandomHexColor() {
         .toString(16)
         .padStart(6, 0)}`;
 }
+
+// function handleSubmit() {
+//     let randomColor = getRandomHexColor();
+
+//     document.body.style.backgroundColor = randomColor;
+//     textColor.textContent = randomColor;
+// }

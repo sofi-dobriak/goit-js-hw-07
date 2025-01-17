@@ -1,16 +1,25 @@
 'use strict';
 
-const input = document.querySelector('#name-input');
-const output = document.querySelector('#name-output');
+/*Напиши скрипт, який під час набору тексту в інпуті input#name-input (подія input) підставляє його поточне значення в span#name-output як ім'я для привітання. Обов'язково очищай значення в інпуті по краях від пробілів . Якщо інпут порожній або містить лише пробіли, то замість імені у спан має підставлятися рядок "Anonymous". */
 
-input.addEventListener('input', handleInput);
+const inputEl = document.querySelector('#name-input');
+const outputEl = document.querySelector('#name-output');
 
-function handleInput() {
-    let value = input.value.trim();
+inputEl.addEventListener('input', onInputType);
 
-    if (value === '') {
-        value = 'Anonymous';
-    }
+function onInputType() {
+    const inputValue = inputEl.value.trim();
+    outputEl.textContent = inputValue || 'Anonymous';
 
-    output.textContent = value;
+    return outputEl;
 }
+
+// function handleInput() {
+//     let value = input.value.trim();
+
+//     if (value === '') {
+//         value = 'Anonymous';
+//     }
+
+//     output.textContent = value;
+// }

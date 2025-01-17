@@ -164,3 +164,48 @@ button:focus {
 #controls>button[data-destroy]:focus {
   background-color: #ff7070;
 }
+
+/* ====== ADDITIONAL ====== */
+
+/* .color-button,
+.click-me,
+.timer {
+  margin-bottom: 16px;
+}
+
+.prev,
+.next {
+  min-width: 120px;
+}
+
+.gallery img {
+  margin-bottom: 24px;
+} */
+
+
+.transaction-table {
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+.title__link {
+  display: inline-flex;
+  margin-left: 40px;
+}
+
+.table-item {
+  text-align: center;
+}
+
+.withdraw {
+  background-color: rgba(255, 81, 81, 0.146);
+}
+
+.deposit {
+  background-color: rgba(157, 255, 157, 0.429);
+}

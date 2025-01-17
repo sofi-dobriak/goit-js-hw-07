@@ -29,17 +29,30 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-const markup = images
-    .map(
-        image =>
-            `<li><img src="${image.url}" alt="${image.alt}" style="width:300px; height:auto"/></li>`
-    )
-    .join('');
+function imageTamplate(images) {
+    return `<li>
+                <img src="${images.url}" alt="${images.alt}" style="width: 320px; height: auto; margin-bottom: 0"">
+            </li>`;
+}
 
+function imagesTamplate(arr) {
+    return arr.map(imageTamplate).join('');
+}
+
+const markup = imagesTamplate(images);
 gallery.insertAdjacentHTML('afterbegin', markup);
 
-// Styles;
+//Styles;
 gallery.style.display = 'flex';
 gallery.style.flexWrap = 'wrap';
 gallery.style.alignItems = 'center';
 gallery.style.gap = '24px';
+
+// const markup = images
+//     .map(
+//         image =>
+//             `<li><img src="${image.url}" alt="${image.alt}" style="width:300px; height:auto"/></li>`
+//     )
+//     .join('');
+
+// gallery.insertAdjacentHTML('afterbegin', markup);
