@@ -85,8 +85,9 @@ input {
   font-family: "Montserrat", sans-serif;
   padding: 8px 16px;
   border: 1px solid #808080;
-  border-radius: 4px;
+  border-radius: 8px;
   min-width: 360px;
+  min-height: 40px;
   margin-bottom: 16px;
 }
 
@@ -165,23 +166,7 @@ button:focus {
   background-color: #ff7070;
 }
 
-/* ====== ADDITIONAL ====== */
-
-/* .color-button,
-.click-me,
-.timer {
-  margin-bottom: 16px;
-}
-
-.prev,
-.next {
-  min-width: 120px;
-}
-
-.gallery img {
-  margin-bottom: 24px;
-} */
-
+/* ====== TRANSACTIONS ====== */
 
 .transaction-table {
   border-collapse: collapse;
@@ -208,4 +193,66 @@ button:focus {
 
 .deposit {
   background-color: rgba(157, 255, 157, 0.429);
+}
+
+/* ====== TO DO LIST ====== */
+
+.task-title {
+  margin-bottom: 12px;
+}
+
+.form-task {
+  margin-bottom: 20px;
+}
+
+.note-checkbox {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 0;
+}
+
+
+.task-button {
+  display: block;
+}
+
+.tasks-container {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 360px;
+  height: auto;
+}
+
+.note-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.note-container:hover {
+  background-color: #e2e1f9;
+  border-radius: 8px;
+}
+
+.note-container:last-child {
+  margin-bottom: 0;
+}
+
+.note-title {
+  font-size: 20px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.note-text {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.note-date {
+  margin-bottom: 0;
+  font-size: 12px;
 }
