@@ -1,0 +1,58 @@
+.recipe-form {
+    margin-bottom: 30px;
+}
+
+.recipe-title {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.recipe-input {
+    font-size: 16px;
+}
+
+.recipe-input::placeholder {
+    color: gray;
+}
+
+.recipe-textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    resize: none;
+    min-width: 360px;
+    min-height: 160px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.recipe-textarea::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: gray;
+}
+
+.submit-button {
+    display: block;
+}
+
+.ingredients-list {
+    margin-bottom: 12px;
+}
+
+.cooking-item {
+    margin-bottom: 12px;
+}
+
+.step-title {
+    text-decoration: underline;
+}
+
+.cooking-item p {
+    margin-bottom: 0;
+}
+
+.recipe-container {
+    max-width: 460px
+}

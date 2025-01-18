@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="./recipe-card.css" />
+    <title>EXAMPLE</title>
+</head>
+
+<body>
+    <a class="go-back" href="../index.html">Go Back</a>
+
+    <h2 class="recipe-title">Recipe Cards</h2>
+
+    <form class="recipe-form">
+        <label for="recipe"></label>
+        <input class="recipe-input" type="text" name="title" id="title" data-min-len="3"
+            placeholder="Enter recipe title">
+
+        <label for="ingredients"></label>
+        <input class="recipe-input" type="text" name="ingredients" id="ingredients" data-min-len="3"
+            placeholder="E.g., Flour, Sugar, Butter">
+
+        <label for="cooking"></label>
+        <textarea class="recipe-textarea" type="text" name="cooking" id="cooking"
+            placeholder="Please start the next step on a new line"></textarea>
+
+        <button class="submit-button js-submit-button" type="submit">Submit</button>
+    </form>
+
+    <div class="recipe-container-item">
+
+    </div>
+
+    <script src="./recipe-card.js"></script>
+</body>
+
+</html>

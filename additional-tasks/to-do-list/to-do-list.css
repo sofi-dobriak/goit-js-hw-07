@@ -1,0 +1,60 @@
+/* ====== TO DO LIST ====== */
+
+.task-title {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.form-task {
+    margin-bottom: 20px;
+}
+
+.note-checkbox {
+    min-width: 20px;
+    min-height: 20px;
+    margin: 0;
+}
+
+
+.task-button {
+    display: block;
+}
+
+.tasks-container {
+    width: 360px;
+    height: auto;
+}
+
+.note-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.note-container:hover {
+    background-color: #e1e9f9;
+    border-radius: 8px;
+}
+
+.note-container:last-child {
+    margin-bottom: 0;
+}
+
+.note-title {
+    font-size: 20px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.note-text {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.note-date {
+    margin-bottom: 0;
+    font-size: 12px;
+}
