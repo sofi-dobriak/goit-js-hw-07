@@ -1,0 +1,51 @@
+.go-back {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.red.active {
+    background-color: red;
+}
+
+.yellow.active {
+    background-color: yellow;
+}
+
+.green.active {
+    background-color: green;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: gray;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}

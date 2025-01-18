@@ -1,0 +1,38 @@
+.go-back {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.number-input,
+.operation-select {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.btn-calculate {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-calculate:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
